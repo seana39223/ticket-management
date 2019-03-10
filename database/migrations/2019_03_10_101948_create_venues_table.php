@@ -18,7 +18,9 @@ class CreateVenuesTable extends Migration
             $table->timestamps();
             $table->string('name');
             $table->string('address1');
-            $table->string('address2');
+            $table->string('address2')->nullable();
+            $table->string('city');
+            $table->string('country');
             $table->string('postcode');
         });
     }
