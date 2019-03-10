@@ -23,6 +23,6 @@ class VenueController extends Controller
      */
     public function index()
     {
-        return view('venue');
+        return view('venue.index');
     }
 }
