@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Venue;
 
 class VenueController extends Controller
 {
@@ -23,6 +24,8 @@ class VenueController extends Controller
      */
     public function index()
     {
-        return view('venue.index');
+        $venues = Venue::all();
+
+        return view('venues.index', compact('venues'));
     }
 }
