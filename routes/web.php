@@ -19,3 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/venues', 'VenueController@index')->name('venues');
+Route::get('/venues/create', 'VenueController@create')->name('intents');
+Route::post('/venues', 'VenueController@store');
